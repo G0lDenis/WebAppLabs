@@ -1,0 +1,48 @@
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+h1, h2, p, a, li, pre {
+  font-family: 'Helvetica', 'Verdana', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation__nav-element {
+  color: black;
+  align-items: center;
+  user-select: none;
+}
+
+.navigation {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 20px;
+	background-color: #ccc;
+}
+
+.navigation__logo {
+  margin-right: 24px;
+}
+
+.navigation__logo h1 {
+	font-size: 24px;
+}
+
+.navigation__panel {
+	display: flex;
+	gap: 30px;
+}
+
+.navigation__nav-element {
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.navigation__nav-element:hover {
+	color: #555;
+}
