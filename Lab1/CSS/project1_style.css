@@ -1,3 +1,53 @@
+main {
+  padding: 20px;
+}
+
 .about-project {
   display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.about-project h1 {
+  font-size: 36px;
+  color: black;
+}
+
+.about-project__github-image {  
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.project-info {
+  margin-bottom: 20px;
+}
+
+.technologies ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.technologies__element {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+code {
+  color: #c7254e;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
 }
