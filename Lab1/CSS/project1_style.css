@@ -1,5 +1,6 @@
 main {
   padding: 20px;
+  color: #0D0D0D;
 }
 
 .about-project {
@@ -23,6 +24,11 @@ main {
   margin-bottom: 20px;
 }
 
+.technologies h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 .technologies ul {
   list-style-type: square;
   margin-left: 20px;
@@ -30,7 +36,6 @@ main {
 
 .technologies__element {
   font-size: 18px;
-  color: black;
   margin-bottom: 10px;
 }
 
@@ -47,7 +52,7 @@ code {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: black;
   line-height: 1.5;
 }

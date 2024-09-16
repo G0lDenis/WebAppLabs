@@ -21,7 +21,7 @@ a {
 	justify-content: flex-start;
 	align-items: center;
 	padding: 20px;
-	background-color: #ccc;
+	/* background-color: #ccc; */
 }
 
 .navigation__logo {
@@ -34,7 +34,7 @@ a {
 
 .navigation__panel {
 	display: flex;
-	gap: 30px;
+	gap: 50px;
 }
 
 .navigation__nav-element {
@@ -45,4 +45,22 @@ a {
 
 .navigation__nav-element:hover {
 	color: #555;
+}
+
+.navigation__contacts {
+	margin-left: 20px;
+	display: flex;
+	gap: 10px;
+}
+
+.navigation__github-profile-image {
+	width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.navigation__telegram-profile-image {
+	width: 30px;
+  height: 30;
+  margin: 5px;
 }
