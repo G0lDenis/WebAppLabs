@@ -43,3 +43,9 @@ main {
 	color: #000;
 	user-select: none;
 }
+
+@media (max-width: 579px) {
+	.computer-image {
+		display: none;
+	}
+}
