@@ -20,4 +20,18 @@ main {
   aspect-ratio: 0.75;
   margin: 25px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.photo-block-active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  z-index: 10;
+}
+
+.body-dark-bg {
+  background-color: rgba(0, 0, 0, 0.5);
 }

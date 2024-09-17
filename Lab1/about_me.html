@@ -34,7 +34,7 @@
         </header>
 
 		<main>
-            <div class="photo-block"></div>
+            <div class="photo-block" id="photoBlock"></div>
             <div class="interests">
                 <grid>
                     
@@ -44,5 +44,19 @@
 
 		<footer>
 		</footer>
+
+        <script>
+            const image = document.getElementById('photoBlock');
+            image.addEventListener('click', function(event) {
+                event.stopPropagation();
+                document.body.classList.add('body-dark-bg');
+                image.classList.add('photo-block-active');
+            });
+
+            document.body.addEventListener('click', function() {
+                image.classList.remove('photo-block-active');
+                document.body.classList.remove('body-dark-bg');
+            });
+        </script>
 	</body>
 </html>
