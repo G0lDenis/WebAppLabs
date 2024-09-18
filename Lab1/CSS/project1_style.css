@@ -7,6 +7,7 @@ body {
 }
 
 main {
+  flex: 1;
 	padding: 20px;
 }
 
@@ -58,7 +59,7 @@ code {
   font-family: "Courier New", Courier, monospace;
 }
 
-p {
+p:not(#footer-info) {
   font-size: 18px;
   color: black;
   line-height: 1.5;
