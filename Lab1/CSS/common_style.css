@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-h1, h2, h3, p, a, li, pre {
+h1, h2, h3, p, a, li, pre, table {
   font-family: 'Helvetica', 'Verdana', sans-serif;
 }
 

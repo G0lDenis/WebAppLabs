@@ -35,10 +35,37 @@
 
 		<main>
             <div class="photo-block" id="photoBlock"></div>
+            <div class="wrapper" id="darkWrapper"></div>
+            <div class="photo-block photo-full-size" id="photoFullSize"></div>
             <div class="interests">
-                <grid>
-                    
-                </grid>
+                <table class="interests__table" id="interests">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Спорт</th>
+                            <th>Сериал</th>
+                            <th>Время года</th>
+                        </tr>
+                        <tr>
+                            <td>Love</td>
+                            <td>Волейбол</td>
+                            <td>Друзья</td>
+                            <td>Везде есть вайб</td>
+                        </tr>
+                        <tr>
+                            <td>Hate</td>
+                            <td>Айкидо</td>
+                            <td>Теория большого взрыва</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Hmm..</td>
+                            <td>Футбольчик</td>
+                            <td>Тьма</td>
+                            <td>Осень</td>
+                        </tr>
+                  </tbody>
+                </table>
             </div>
 		</main>
 
@@ -47,15 +74,17 @@
 
         <script>
             const image = document.getElementById('photoBlock');
+            const full_image = document.getElementById('photoFullSize');
+            const wrapper = document.getElementById('darkWrapper');
             image.addEventListener('click', function(event) {
                 event.stopPropagation();
-                document.body.classList.add('body-dark-bg');
-                image.classList.add('photo-block-active');
+                wrapper.classList.add('wrapper-dark');
+                full_image.classList.add('photo-full-size-active');
             });
 
             document.body.addEventListener('click', function() {
-                image.classList.remove('photo-block-active');
-                document.body.classList.remove('body-dark-bg');
+                full_image.classList.remove('photo-full-size-active');
+                wrapper.classList.remove('wrapper-dark');
             });
         </script>
 	</body>
