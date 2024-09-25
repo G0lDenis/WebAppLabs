@@ -70,7 +70,6 @@ document.getElementById("loadButton").addEventListener("click", function(event) 
         li.remove();
     });
     Array.from(JSON.parse(localStorage.getItem('todos'))).forEach(li => {
-        console.log(li.text);
         var new_element = document.createElement("li");
         var t = document.createTextNode(li.text);
         new_element.appendChild(t);
