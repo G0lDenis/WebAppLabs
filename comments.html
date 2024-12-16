@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some comments</title>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/common_style.css">
+  <link rel="stylesheet" href="CSS/comments.css">
+  <script src="scripts/comments.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Список комментариев</h1>
+  </header>
+  <main>
+    <div id="preloader" class="hidden">
+      <div class="spinner"></div>
+      <p>Загрузка данных...</p>
+    </div>
+
+    <div id="comments-container"></div>
+
+    <div id="error-message" class="hidden">
+      ⚠ Что-то пошло не так
+    </div>
+  </main>
+</body>
+</html>
